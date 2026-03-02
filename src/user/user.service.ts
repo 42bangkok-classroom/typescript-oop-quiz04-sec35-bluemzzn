@@ -5,4 +5,7 @@ export class UserService {
     test(){
         return [];
     }
+    findAll(){
+        
+    }
 }
