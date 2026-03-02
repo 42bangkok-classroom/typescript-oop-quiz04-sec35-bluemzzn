@@ -14,23 +14,23 @@ export class UserService {
     const data = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(data) as IUser[];
   }
-//   findId(id: string, fields?: string[]): Partial<IUser>{
-//     const Users = this.findAll();
-//     const User = Users.find(user => user.id === id);
+  //   findId(id: string, fields?: string[]): Partial<IUser>{
+  //     const Users = this.findAll();
+  //     const User = Users.find(user => user.id === id);
 
-//     if(!User){
-//         throw new NotFoundException('User Not Found');
-//     }
+  //     if(!User){
+  //         throw new NotFoundException('User Not Found');
+  //     }
 
-//     if(!fields ||fields.length === 0){
-//         return User;
-//     }
+  //     if(!fields ||fields.length === 0){
+  //         return User;
+  //     }
 
-//     const filter: Partial<IUser> = {};
-//     fields.forEach
-//   }
+  //     const filter: Partial<IUser> = {};
+  //     fields.forEach
+  //   }
 
-create(createUserDto: CreateUserDto): IUser {
+  create(createUserDto: CreateUserDto): IUser {
     const users = this.findAll();
     const newId = String(users.length + 1);
     const newUser: IUser = { id: newId, ...createUserDto };

@@ -15,14 +15,13 @@ export class UserController {
     return this.userService.findAll();
   }
 
-//   @Get(':id')
-//   findId(@Query()){
-//     return this.userService.findId();
-//   }
+  //   @Get(':id')
+  //   findId(@Query()){
+  //     return this.userService.findId();
+  //   }
 
-@Post()
-create(@Body() createUserDto : CreateUserDto){
-    return  this.userService.create(createUserDto);
-}
-
+  @Post()
+  create(@Body() createUserDto: CreateUserDto) {
+    return this.userService.create(createUserDto);
+  }
 }
