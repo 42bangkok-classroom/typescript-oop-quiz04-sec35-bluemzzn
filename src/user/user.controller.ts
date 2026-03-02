@@ -8,4 +8,9 @@ export class UserController {
   test() {
     return this.userService.test();
   }
+
+  @Get()
+  findAll(){
+    return this.userService.findAll();
+  }
 }
