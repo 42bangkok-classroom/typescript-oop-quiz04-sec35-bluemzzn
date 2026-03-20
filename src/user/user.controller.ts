@@ -22,11 +22,6 @@ export class UserController {
     return this.userService.findAll();
   }
 
-  //   @Get(':id')
-  //   findId(@Query()){
-  //     return this.userService.findId();
-  //   }
-
   @Post()
   @UsePipes(new ValidationPipe())
   create(@Body() createUserDto: CreateUserDto) {
