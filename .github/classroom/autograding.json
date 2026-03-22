@@ -1,55 +1,55 @@
 {
-    "title": "TypeScript OOP Quiz 4 Section 35",
-    "tests": [
-      {
-        "name": "Problem 1 - Unit Test",
-        "run": "npm run test:p01",
-        "points": 0.5
-      },
-      {
-        "name": "Problem 1 - E2E Test",
-        "run": "npm run test:e2e:p01",
-        "points": 0.5
-      },
-      {
-        "name": "Problem 2 - Unit Test",
-        "run": "npm run test:p02",
-        "points": 0.5
-      },
-      {
-        "name": "Problem 2 - E2E Test",
-        "run": "npm run test:e2e:p02",
-        "points": 0.5
-      },
-      {
-        "name": "Problem 3 - Unit Test",
-        "run": "npm run test:p03",
-        "points": 0.5
-      },
-      {
-        "name": "Problem 3 - E2E Test",
-        "run": "npm run test:e2e:p03",
-        "points": 0.5
-      },
-      {
-        "name": "Problem 4 - Unit Test",
-        "run": "npm run test:p04",
-        "points": 0.5
-      },
-      {
-        "name": "Problem 4 - E2E Test",
-        "run": "npm run test:e2e:p04",
-        "points": 0.5
-      },
-      {
-        "name": "Problem 5 - Unit Test",
-        "run": "npm run test:p05",
-        "points": 0.5
-      },
-      {
-        "name": "Problem 5 - E2E Test",
-        "run": "npm run test:e2e:p05",
-        "points": 0.5
-      }
-    ]
-  }
+  "title": "TypeScript OOP Quiz 4 Section 35",
+  "tests": [
+    {
+      "name": "Problem 1 - Unit Test",
+      "run": "npm run test:p01",
+      "points": 0.5
+    },
+    {
+      "name": "Problem 1 - E2E Test",
+      "run": "npm run test:e2e:p01",
+      "points": 0.5
+    },
+    {
+      "name": "Problem 2 - Unit Test",
+      "run": "npm run test:p02",
+      "points": 0.5
+    },
+    {
+      "name": "Problem 2 - E2E Test",
+      "run": "npm run test:e2e:p02",
+      "points": 0.5
+    },
+    {
+      "name": "Problem 3 - Unit Test",
+      "run": "npm run test:p03",
+      "points": 0.5
+    },
+    {
+      "name": "Problem 3 - E2E Test",
+      "run": "npm run test:e2e:p03",
+      "points": 0.5
+    },
+    {
+      "name": "Problem 4 - Unit Test",
+      "run": "npm run test:p04",
+      "points": 0.5
+    },
+    {
+      "name": "Problem 4 - E2E Test",
+      "run": "npm run test:e2e:p04",
+      "points": 0.5
+    },
+    {
+      "name": "Problem 5 - Unit Test",
+      "run": "npm run test:p05",
+      "points": 0.5
+    },
+    {
+      "name": "Problem 5 - E2E Test",
+      "run": "npm run test:e2e:p05",
+      "points": 0.5
+    }
+  ]
+}
