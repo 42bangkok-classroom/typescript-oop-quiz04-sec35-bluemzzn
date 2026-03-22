@@ -28,11 +28,12 @@ export class UserService {
       return user;
     }
 
-    const result: any = {};
+    const result: Partial<IUser> = {};
     fields.forEach((field) => {
-      result[field] = (user as any)[field];
+      const key = field as keyof IUser;
+      result[key] = user[key];
     });
-    return result as Partial<IUser>;
+    return result;
   }
 
   create(dto: CreateUserDto) {
