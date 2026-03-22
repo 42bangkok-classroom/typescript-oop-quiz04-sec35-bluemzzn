@@ -2,6 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { IUser } from './user.interface';
 import path from 'path';
 import * as fs from 'fs';
+import { CreateUserDto } from './dto/create-user.dto';
 
 @Injectable()
 export class UserService {
@@ -15,20 +16,33 @@ export class UserService {
     return JSON.parse(data) as IUser[];
   }
 
-  findOne(id: string, fields?: string[]): Partial<IUser> {
+  //   findOne(id: string, fields?: string[]): Partial<IUser> {
+  //     const users = this.findAll();
+  //     const user = users.find((u) => u.id === id);
+
+  //     if (!user) {
+  //       throw new NotFoundException('User not Found');
+  //     }
+
+  //     if (!fields || fields.length === 0) {
+  //       return user;
+  //     }
+
+  //     fields.forEach((field) => {
+  //       return field.length > 0;
+  //     });
+  //   }
+
+  create(dto: CreateUserDto) {
     const users = this.findAll();
-    const user = users.find((u) => u.id === id);
+    const newId = String(users.length + 1);
+    const newUser = {id : newId, ...dto};
 
-    if (!user) {
-      throw new NotFoundException('User not Found');
-    }
+    users.push(newUser);
 
-    if (!fields || fields.length === 0) {
-      return user;
-    }
-
-    fields.forEach((field) => {
-      return field.length > 0;
-    });
-  }
+    const filePath = path.join(process.cwd(), 'data/users.json');
+    fs.writeFileSync(filePath, JSON.stringify(users, null, 2));
+    
+    return newUser;
+}
 }
