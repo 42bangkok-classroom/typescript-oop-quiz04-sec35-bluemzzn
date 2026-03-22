@@ -20,7 +20,7 @@ export class UserController {
     return this.userService.findOne(id, fieldArray);
   }
 
-  @Get(':test')
+  @Get('test')
   test() {
     return this.userService.test();
   }
