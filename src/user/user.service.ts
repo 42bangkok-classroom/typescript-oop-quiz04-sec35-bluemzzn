@@ -36,13 +36,13 @@ export class UserService {
   create(dto: CreateUserDto) {
     const users = this.findAll();
     const newId = String(users.length + 1);
-    const newUser = {id : newId, ...dto};
+    const newUser = { id: newId, ...dto };
 
     users.push(newUser);
 
     const filePath = path.join(process.cwd(), 'data/users.json');
     fs.writeFileSync(filePath, JSON.stringify(users, null, 2));
-    
+
     return newUser;
-}
+  }
 }
