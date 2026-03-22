@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { IUser } from './user.interface';
-import 'data/users.json';
 import path from 'path';
 import * as fs from 'fs';
 
