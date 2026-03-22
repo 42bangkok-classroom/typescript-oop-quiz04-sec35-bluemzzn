@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { IUser } from './user.interface';
 import path from 'path';
 import * as fs from 'fs';
